@@ -20,28 +20,28 @@ npx --version # 7.12.0 or version 6.x
 npm install
 ```
 
-### To build:
-```sh
-npm run build
-```
-
-### To run tests:
-
-```sh
-npm run test
-```
-
 ### To run Lintting/prettier:
 
 ```sh
 npm run eslint/prettier
 ```
 
+### To build:
+```sh
+npm run build
+```
+
 
 ### To run tests:
 ```sh
-npm build:server
+npm run test
 ```
+
+### To run start:
+```sh
+npm run start
+```
+the server will run at http://localhost:3000/
 
 ### ./src
 Contains main source code.
