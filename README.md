@@ -2,11 +2,6 @@
 A website used to resize images using Sharp library.
 more about sharp https://sharp.pixelplumbing.com/
 
-### Windows users need to disable autocrl in git before pull
-```sh
-git config --global core.autocrlf false
-```
-
 ### Current Tool Versions:
 
 ```sh
