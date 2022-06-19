@@ -1,7 +1,7 @@
 import app from '../../../src/app.js';
 import request from 'supertest';
 
-describe('GET /imagesList', function () {
+describe('GET /imagesList', function (): void {
   it('respond with Array of strings that contains "fjord.jpg"', function (done) {
     request(app)
       .get('/api/get/imagesList')

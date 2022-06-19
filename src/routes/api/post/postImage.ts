@@ -3,8 +3,10 @@ import express, { Request, Response } from 'express';
 import multer from 'multer';
 import path from 'path';
 
-const __dirname = path.resolve();
-const imagesDirPath = path.join(__dirname, 'src/static/assets/images');
+const imagesDirPath = path.join(
+  __dirname,
+  '../../../../../static/assets/images'
+);
 
 const upload = multer({
   limits: { fieldSize: 10 * 1024 * 1024 },

@@ -70,7 +70,7 @@ Get /
 
 ### Get the current images:
 ```sh
-Get /get/imagesList
+Get api/get/imagesList
 ```
 
 ### Post resize an image:
@@ -78,5 +78,5 @@ to resize an image we need to pass the parametrs in this format
 "image-name_width_height.extention"
 
 ```sh
-Post /post/resize/fjord_800_200.jpg
+get api/get/resize/fjord_800_200.jpg
 ```

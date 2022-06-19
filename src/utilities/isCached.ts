@@ -1,10 +1,9 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 
-const __dirname = path.resolve();
 const imagesResizedDirPath = path.join(
   __dirname,
-  'src/static/assets/images/resizedImages'
+  '../../../static/assets/images/resizedImages'
 );
 
 export default async function isCashed(newImageName: string): Promise<boolean> {

@@ -145,7 +145,6 @@ function resizeImage() {
             const height = +document.getElementById('image-height').value;
             const ext = '.' + (imageName === null || imageName === void 0 ? void 0 : imageName.split('.').pop());
             let url = this.getAttribute('action');
-            url = url.concat(`/${fileName}_${width}_${height}.${ext}`);
             if (url && width && height) {
                 const res = yield fetch(url, {
                     method: 'post',
@@ -165,7 +164,7 @@ function resizeImage() {
                     const resizeCheckElem = document.getElementById('resize-check');
                     const successAlert = parseHTML('<div class="alert alert-success" role="alert"> the image Processed Successfly !</div>');
                     const resizedImageSectionElem = document.getElementById('resized-image-section');
-                    const resizeImagElem = parseHTML(`<img id="preview-image-src" src="/assets/images/resizedImages/${resizedImagePath}" alt="...">`);
+                    const resizeImagElem = parseHTML(`<img id="preview-image-src" src="${resizedImagePath}" alt="...">`);
                     if (successAlert && resizeImagElem) {
                         resizeCheckElem.innerHTML = '';
                         resizeCheckElem.appendChild(successAlert);

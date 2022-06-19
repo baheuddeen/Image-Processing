@@ -9,7 +9,7 @@
     "test": "npx jasmine",
     "eslint/prettier": "npx eslint . --ext .ts"
   },
-  "type": "module",
+  "type": "commonjs",
   "author": "",
   "license": "ISC",
   "devDependencies": {
