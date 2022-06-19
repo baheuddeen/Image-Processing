@@ -44,10 +44,30 @@ npm run start
 ```
 the server will run at http://localhost:3000/
 
+#### APIs End-points
+
+### The home page index:
+```sh
+Get /
+```
+
+### Post resize an image:
+to resize an image we need to pass the parametrs in this format 
+"image-name_width_height.extention"
+
+```sh
+get api/get/resize/fjord_800_200.jpg
+```
+
+### Get the current images:
+```sh
+Get api/get/imagesList
+```
+
 ### ./src
 Contains main source code.
 
-### ./src/static
+### ./static
 Contains the static content with index.html
 
 
@@ -58,25 +78,3 @@ End-points routes
 #### ./src/utilites
 
 Some functions used with the APIs 
-
-
-
-#### APIs End-points
-
-### The home page index:
-```sh
-Get /
-```
-
-### Get the current images:
-```sh
-Get api/get/imagesList
-```
-
-### Post resize an image:
-to resize an image we need to pass the parametrs in this format 
-"image-name_width_height.extention"
-
-```sh
-get api/get/resize/fjord_800_200.jpg
-```
