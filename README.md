@@ -10,6 +10,12 @@ npm --version # 7.12.0 or version 6.x
 npx --version # 7.12.0 or version 6.x
 ```
 
+# for linux users 
+in the package .json change the sharp version 
+```sh
+"sharp": ^0.23.2
+```
+
 ### To install run:
 ```sh
 npm install
